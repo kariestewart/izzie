@@ -1,0 +1,108 @@
+  /* Importing Typekit font */
+@import url("https://use.typekit.net/vve3wow.css");
+
+/* Define common font styles */
+body {
+    font-family: Arial, Verdana, Helvetica, sans-serif; 
+    color: #302F2D; 
+    font-size: 14px; 
+    background-color: #CDC7C3;
+}
+
+/* Define custom fonts */
+@font-face {
+    font-family: eight;
+    font-weight: 400;
+    font-style: normal;
+    src: url("path/to/eight-font.woff2") format("woff2"),
+         url("path/to/eight-font.woff") format("woff"),
+         url("path/to/eight-font.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: bely-display;
+    font-weight: 400;
+    font-style: normal;
+    src: url("path/to/bely-display-font.woff2") format("woff2"),
+         url("path/to/bely-display-font.woff") format("woff"),
+         url("path/to/bely-display-font.ttf") format("truetype");
+}
+
+/* Define navigation */
+nav {
+    font-family: bely-display, Arial, Verdana, Helvetica, sans-serif; /* Fallback fonts */
+    font-weight: 400;
+    font-style: normal;
+    padding-left: 115px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #302F2D;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+/* Header styles */
+header {
+    padding-top: 30px;
+    padding-left: 300px;
+}
+
+/* Content wrapper styles */
+.content-wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+.main-content {
+    padding-bottom: 60px;
+}
+
+/* Footer styles */
+.footer {
+    color: #CDC7C3;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    background-color: black;
+    text-align: center;
+    z-index: 999;
+    overflow: hidden;
+}
+
+/* Contact info and icons */
+.contact-info, .icons {
+    position: relative;
+    margin: 10px 0;
+}
+
+.icons {
+    margin-right: 10px;
+}
+
+/* Peeking illustration */
+
+.peeking-illus {
+    position: fixed;
+    bottom: 14%;
+    right: 20px;
+    z-index: 1000; /* Set a higher z-index to ensure it appears above the footer */
+   
+    transition: opacity 0.3s;
+}
+
+
+.content-wrapper:hover .peeking-illus {
+    opacity: 1;
+}
