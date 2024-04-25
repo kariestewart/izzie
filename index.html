@@ -1,26 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-	<meta charset="UTF-8">
-		<title> Izzi.e.</title>
-		<link rel="stylesheet" type="text/css" href="css/css-izzie-revised2.css" />
-	</head>
-	<body>
-		<h1> Test Test Test </h1>
-		<!-- The header includes the wordmark, mascot illustration, and site navigation. -->
-		<header>
-		<img src="LogoIllus.png" alt="Text reading Izzi.e. with a cartoon illustration of a tuxedoed,   tophated individual" />
-			<nav>
-			</nav>
-		<h2> Test test Test </h2>
-		<p> Test test test </p>
-		</header>
-	<!-- The footer includes social icons, contact email, 	and peeking mascot. -->
-	<footer>
-		<img src="PeekingIllus.png" alt="a cartoon illustration of a tuxedoed,   tophated individual peeking over the footer bar" />
-		<img src="TwitIcon.png" alt="The Twitter Bird icon" />
-		<img src="YTIcon.png" alt="The YouTube Playbutton icon" />
-		<img src="KoFiIcon.png" alt="The Kofi Coffee Mug icon" />
-	</footer>
-	</body>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Two Column Layout</title>
+<style>
+    /* Resetting default margin and padding */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Container for the two columns */
+    .container {
+        display: flex;
+    }
+
+    /* Style for the columns */
+    .column {
+        width: 50%;
+        background-color: #f0f0f0; /* Just for demonstration */
+        padding: 20px;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="column">
+        <h2>Left Column</h2>
+        <p>This is the left column. It can contain any content you want.</p>
+    </div>
+    <div class="column">
+        <h2>Right Column</h2>
+        <p>This is the right column. It can also contain any content you want.</p>
+    </div>
+</div>
+
+</body>
 </html>
